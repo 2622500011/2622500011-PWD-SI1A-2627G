@@ -1,65 +1,75 @@
-/* 1. Box Model - Wajib ada */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+ #about {
+            background-color: #ffffff;
+            border: 1px solid #d0d7de;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
 
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-  line-height: 1.5;
-}
+        #about h2 {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 6px;
+            margin-bottom: 16px;
+        }
 
-/* 2. Flexbox untuk navigasi - Poin 3 modul */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  background: #f6f8fa;
-  padding: 10px 20px;
-  border-bottom: 2px solid #003366;
-}
+        #about h3 {
+            color: #1f4e78;
+            margin-bottom: 6px;
+        }
 
-nav ul {
-  display: flex;
-  gap: 15px;
-  list-style: none;
-}
+        #about p {
+            margin: 6px 0;
+            padding: 6px 0;
+            border-bottom: 1px solid #e6e6e6;
+        }
 
-/* 3. Grid untuk layout utama - Poin 4 modul */
-.container {
-  display: grid;
-  grid-template-columns: 1fr; /* HP = 1 kolom */
-  gap: 20px;
-  margin-top: 20px;
-}
+        #about ol {
+            color: #333333;
+            margin: 8px 0;
+            padding: 8px 24px;
+            border: 1px solid #e6e6e6;
+        }
 
-#about {
-  background-color: #ffffff;
-  border: 1px solid #d0d7de;
-  padding: 20px;
-  margin: 20px 0;
-}
+        #contact {
+            background-color: #f8fafc;
+            border: 1px solid #cbd5e1;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
 
-/* Tombol biru biar gak abu-abu lagi */
-button {
-  background-color: #003366;
-  color: white;
-  padding: 8px 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
+        #contact h2 {
+            color: #003366;
+            border-bottom: 2px solid #003366;
+            padding-bottom: 6px;
+            margin-bottom: 16px;
+        }
 
-button:hover {
-  background-color: #001f3f;
-}
+        .form-group {
+            margin: 12px 0;
+        }
 
-/* 4. Responsive Mobile-First - Poin 5 & 6 modul */
-@media (min-width: 768px) {
-  .container {
-    grid-template-columns: 1fr 2fr; /* Laptop = 2 kolom */
-  }
-}
+        #contact label {
+            color: #1f2937;
+            font-weight: bold;
+        }
+
+        .input-form {
+            background-color: #ffffff;
+            color: #111827;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            padding: 8px;
+            margin: 4px 0;
+            border: 1px solid #94a3b8;
+        }
+
+        #contact button {
+            background-color: #003366;
+            color: #ffffff;
+            font-weigth: bold;
+            padding: 8px 14px;
+            margin: 8px 6px 0 0;
+            border: 1px solid #003366;
+        }
