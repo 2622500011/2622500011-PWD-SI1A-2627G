@@ -24,6 +24,32 @@
       font-size: 28px;
       }
 
+      .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
+
+      #navMenu {
+        display: none;
+      }
+
+      #navMenu.nav-open {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+      }
+
+      .nav-toggle {
+        display: block;
+        border: none;
+        background: transparent;
+        color: #ffffff;
+        font-size: 1.8rem;
+        line-height: 1;
+        cursor: pointer;
+      }
+
       nav ul {
       display: flex;
       flex-direction: column;
@@ -41,6 +67,7 @@
       text-decoration: none;
       }
 
+      /* layout utama */
       main {
       display: grid;
       grid-template-columns: 1fr;
@@ -54,6 +81,7 @@
       margin: 0;
       }
       
+      /* bagian home */
       #home {
         background-color: #ffffff;
         border: 1px solid #d0d7de;
@@ -82,6 +110,7 @@
         border: 1px solid #cbd5e1;
       }
 
+      /* bagian Tentang */
       #about {
         background-color: #ffffff;
         border: 1px solid #d0d7de;
@@ -117,6 +146,7 @@
         border: 1px solid #e6e6e6;
       }
 
+      /* bagian Kontak */
       #contact {
         background-color: #f8fafc;
         border: 1px solid #cbd5e1;
@@ -183,6 +213,14 @@
         margin: 0;
       }
 
+      .form-feedback-error {
+        color: #c62828;
+      }
+
+      .form-feedback-success {
+        color: #2e7d32;
+      }
+
       @media (min-width: 768px) {
 
       /* aturan CSS untuk viewport dengan lebar minimal 768px */
@@ -199,6 +237,15 @@
 
       #contact {
       grid-column: 1 / -1;  
+      }
+
+      #navMenu {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .nav-toggle {
+        display: none;
       }
     }
     </style>
