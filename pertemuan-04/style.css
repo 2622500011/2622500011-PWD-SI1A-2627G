@@ -1,7 +1,7 @@
-<style>
- { 
-    box-sizing: border-box;
- }
+*{
+box-sizing:border-box
+}
+ 
       body {
         margin: 0;
         padding: 12px;
@@ -201,4 +201,4 @@
       grid-column: 1 / -1;  
       }
     }
-    </style>
+    
