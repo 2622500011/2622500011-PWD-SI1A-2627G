@@ -26,12 +26,12 @@ contactForm.addEventListener("submit", (event) => {
 
   formFeedback.className = "form-feedback-error";
 
-  const nama = namaInput.value.trim();
-  if (nama.length < 3 || nama.length > 50) {
-    formFeedback.textContent =
-      "Nama lengkap harus diisi 3 sampai 50 karakter.";
-    return;
-  }
+contactForm.addEventListener("submit", (event) => {
+     event.preventDefault(); // Jangan lupa tambahkan ini ya!
+     const nama = namaInput.value.trim();
+     if (nama.length < 3 || nama.length > 50) {
+         formFeedback.textContent = "Nama lengkap harus diisi 3 sampai 50 karakter.";
+         return;
 
   const email = emailInput.value.trim();
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -87,7 +87,7 @@ contactForm.addEventListener("submit", (event) => {
 
   formFeedback.textContent = "Form berhasil divalidasi.";
   formFeedback.className = "form-feedback-success";
-});
+};
 
 contactForm.addEventListener("reset", () => {
   formFeedback.textContent = "";
