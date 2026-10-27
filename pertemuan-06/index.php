@@ -2,11 +2,11 @@
 // P6: PHP dasar dan pemrograman sisi peladen
 
 // Bagian 1: Variabel dan konstanta
-$nim = "2611500061";
+$nim = "2622500011";
 $namaMahasiswa = "Sartika";
-$programStudi = "TI";
+$programStudi = "SI";
 $tahunAkademik = "2026/2027";
-$semester = 2;
+$semester = 1;
 $ipk = 3.75;
 $statusAktif = true;
 $catatanTambahan = null;
@@ -96,7 +96,7 @@ $teksStatus = $statusAktif ? "Aktif" : "Tidak aktif";
           pada tahun akademik <?= $tahunAkademik ?>.
         </p>
 
-        <img src="foto-profil.jpg" alt="Foto profil Sartika" />
+        <img src="img/foto.jpg" alt="Foto profil Sartika" width="200" >
       </section>
 
       <section id="about">
