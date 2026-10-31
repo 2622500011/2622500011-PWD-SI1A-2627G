@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Mercon Sartika</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Warung Mercon Sartika</h1>
+    </header>
+    
+    <div class="container">
+
+    <aside class="sidebar">
+        <nav>
+            <a href="#home">Home</a></li>
+            <a href="#menu">Menu</a>
+            <a href="#profil">Profil Saya</a></li>
+            <a href="#contact">Buku Tamu</a></li>
+        </nav>
+     </aside>
+
+    <main class="content">
+        <section id="home">
+            <h2>Selamat Datang di Warung Mercon Sartika</h2>
+            <p>Selamat Datang di Warung Mercon Sartika!
+                Pusatnya makanan pedas nampol di Pangkalpinang! Kami menyajikan Bakso Mercon, Mie Mercon, Seblak Mercon, dan Ayam Geprek Mercon dengan racikan cabai asli Bangka yang pedasnya bikin nagih. Dibuat fresh setiap hari, bumbu meresap, pedasnya bisa kamu atur dari level 1 sampai level 5. Berani coba pedasnya? Ayo buruan datang ke Warung Mercon Sartika dan rasakan sensasi pedas yang bikin ketagihan!</p>
+             <img src="BaksoMercon.jpg" alt="Bakso Mercon" >
+             <img src="MieMercon.webp" alt="Mie Mercon" >
+             <img src="seblakCeker.jpeg" alt="Seblak Ceker" >
+             <img src="AyamGeprek.jpg" alt="Ayam Geprek" >   
+        </section>
+
+        <section id="menu">
+            <h2>Menu Andalan</h2>
+            <div class="menu-item">
+                <img src="BaksoMercon.jpg" alt="Bakso Mercon">
+                <h3>Bakso Mercon</h3>
+                <p>Bakso daging sapi kenyal disirasm kuah mercon super pedas dengan taburan cabai rawit asli Bangka. Pedasnya meresap sampai ke dalam bakso.</p>
+                <b>Harga: Rp 20.000</b>
+            </div>
+            <div class="menu-item">
+                <img src="MieMercon.webp" alt="Mie Mercon">
+                <h3>Mie Mercon</h3>
+                <p>Mie goreng pedas dengan topping ayam, sosis, dan sayuran segar. Dibumbui dengan cabai mercon khas Sartika yang bikin nagih dan gak bikin enek.</p>
+                <b>Harga: Rp 18.000</b>
+            </div>
+            <div class="menu-item">
+                <img src="seblakCeker.jpeg" alt="Seblak Ceker">
+                <h3>Seblak Ceker</h3>
+                <p>Seblak kuah kenyal  dengan ceker emnpuk, kerupuk kenyal, bakso, dan telur. Gurih, pedas, dan cocok buat ngemil sambil nangis kepedesan.</p>
+                <b>Harga: Rp 15.000</b>
+             </div>
+             <div class="menu-item">
+                <img src="AyamGeprek.jpg" alt="Ayam Geprek">
+                <h3>Ayam Geprek</h3>
+                <p>Ayam goreng krispi yang di geprek di atas cobek dengan sambal mercon mentah yang pedasnya nampol.Disajikan dengan lalapan dan nasi hangat.</p>
+                <b>Harga: Rp 16.000</b>
+             </div>
+        </section>
+
+        <section id="profil">
+            <h2>Profil Saya</h2>
+            <img src="PotoProfil.jpeg" alt="Foto Profil Sartika">
+            <p>Nama: Sartika<br>
+            Umur: 19 tahun<br>
+            Alamat: Jalan Mercon No. 123, Pangkalpinang<br>
+            Halo, aku Sartika. Warung Mercon Sartika berawal dari hobi aku yang suka makan pedas. Aku ingin berbagi pengalaman kuliner pedas dengan orang lain. Dari coba-coba buat sambal pedas di kos teman, sekarang jadi warung kecil-kecilan. Semua menu di sini aku buat dengan bahan pilihan dan tanpa pengawet. Terima kasih sudah mampir, semoga pedasnya bisa bikin harimu lebih semangat!</p>
+         </section>
+
+         <section id="contact">
+            <h2>Buku Tamu</h2>
+            <form action="index.html" method="get">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input
+                        class="input-form"
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama lengkap Anda"
+                        minlength="3"
+                        maxlength="50"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        class="input-form"
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Masukkan email Anda"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="No.HP">No. HP</label>
+                    <input
+                        class="input-form"
+                        type="tel"
+                        id="No.HP"
+                        name="No.HP"
+                        placeholder="Masukkan nomor HP Anda"
+                        pattern="[0-9]{10,15}"
+                        required
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <input
+                        class="input-form"
+                        type="text"
+                        id="pesan"
+                        name="pesan"
+                        placeholder="Masukkan pesan Anda"
+                        required
+                    />
+                </div>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+
+</html>
