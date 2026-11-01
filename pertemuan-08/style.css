@@ -10,7 +10,7 @@ img {
 #home, #menu, #profil, #contact {
   min-height: 100vh; /* 100% tinggi layar */
   padding-top: 40px;
-  border-bottom: 2px dashed #FF6B00;
+  border-bottom: 2px dashed #e47423;
 }
 
 html {
@@ -19,7 +19,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #da0909;
+  background-color: #f94a4a;
   color: #333;
   margin: 0;
   padding: 0;
@@ -32,17 +32,18 @@ header {
   text-align: center;
 }
 #menu {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 15px;
+  justify-content: center;
 }
 #menu .item {
   background-color: #fff;
-  padding: 15px;
-  border-radius: 8px;
+  padding: 10px;
+  border-radius: 15px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+} 
 #menu .item:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
