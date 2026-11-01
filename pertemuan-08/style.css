@@ -48,3 +48,69 @@ header {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+/* INI YANG BENER BIAR GAK MERAH SEMUA */
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+  background: #FF6B00;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+}
+
+.sidebar nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 12px 0;
+  font-weight: bold;
+}
+
+.content {
+  margin-left: 240px;
+  padding: 30px;
+  background: #FFF5EB; /* bukan putih polos, tapi krem oranye soft */
+  min-height: 100vh;
+}
+
+/* Biar tiap halaman kayak kartu, bukan kertas polos */
+#home, #menu, #profil, #contact {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(255,107,0,0.15);
+  border-left: 6px solid #FF6B00;
+}
+
+h2 {
+  color: #FF6B00;
+}
+
+/* Menu Andalan biar gak numpuk ke bawah */
+#menu img {
+  border-radius: 12px;
+  margin: 5px;
+  transition: 0.3s;
+}
+#menu img:hover {
+  transform: scale(1.05);
+}
+.menu-item {
+  text-align: center !important;
+  transition: all 0.3s ease !important;
+}
+
+.menu-item h3, .menu-item p, .menu-item b {
+  text-align: center !important;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(255, 107, 0, 0.3);
+  border-color: #FF6B00;
+}
