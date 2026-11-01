@@ -16,3 +16,18 @@ img {
 html {
   scroll-behavior: smooth; /* biar pas di-klik gesernya halus */
 }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #da0909;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #FF6B00;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
