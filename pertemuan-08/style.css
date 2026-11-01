@@ -114,3 +114,53 @@ h2 {
   box-shadow: 0 10px 25px rgba(255, 107, 0, 0.3);
   border-color: #FF6B00;
 }
+/* BENERIN BUKU TAMU */
+#contact {
+  padding: 20px;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #FF6B00;
+}
+
+#contact form {
+  background: white;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 25px;
+  border-radius: 15px;
+  border: 2px solid #FFD4B2;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+#contact label {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#contact button, #contact input[type="submit"] {
+  margin-top: 15px;
+  width: 100%;
+  background: #FF6B00;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#contact button:hover {
+  background: #E55E00;
+}
