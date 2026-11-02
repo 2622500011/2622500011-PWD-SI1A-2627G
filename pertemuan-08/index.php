@@ -1,3 +1,14 @@
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nama = $_POST['Nama_Lengkap'];
+    $email = $_POST['Email'];
+    $nohp = $_POST['No_HP'];
+    $pesan = $_POST['Pesan'];
+
+    echo "Terimakasih $nama, pesan kamu sudah terkirim!";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -72,7 +83,8 @@
 
          <section id="contact" >
             <h2>Buku Tamu</h2>
-            <form action="index.html" method="get">
+            <form action="proses.php
+            " method="POST">
                 <div class="form-group">
                     <label for="nama">Nama Lengkap</label>
                     <input
