@@ -124,6 +124,9 @@
             </form>
         </section>
     </main>
+<footer>
+    <p>&copy;©2622500011_Sartika_SI1A_ UTS Pemrograman Web Dasar.</p>
+</footer>
 <script src="script.js"></script>
 </body>
 
