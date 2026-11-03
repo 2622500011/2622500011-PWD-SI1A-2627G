@@ -1,9 +1,9 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nama = $_POST['Nama_Lengkap'];
-    $email = $_POST['Email'];
-    $nohp = $_POST['No_HP'];
-    $pesan = $_POST['Pesan'];
+    $nama = $_POST['nama'];
+    $email = $_POST['email'];
+    $nohp = $_POST['no_hp'];
+    $pesan = $_POST['pesan'];
 
     echo "Terimakasih $nama, pesan kamu sudah terkirim!";
 }
@@ -83,10 +83,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
          <section id="contact" >
             <h2>Buku Tamu</h2>
-            <form action="proses.php
-            " method="POST">
+            <form action="" 
+             method="POST">
                 <div class="form-group">
-                    <label for="nama">Nama Lengkap</label>
+                    <label for="nama">Nama Lengkap<?= $nama ?></label>
                     <input
                         class="input-form"
                         type="text"
@@ -99,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     />
                 </div>
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email">Email<?= $email ?></label>
                     <input
                         class="input-form"
                         type="email"
@@ -110,19 +110,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     />
                 </div>
                 <div class="form-group">
-                    <label for="No.HP">No. HP</label>
+                    <label for="no_hp">No. HP<?= $no_hp ?></label>
                     <input
                         class="input-form"
                         type="tel"
-                        id="No.HP"
-                        name="No.HP"
+                        id="no_hp"
+                        name="no_hp"
                         placeholder="Masukkan nomor HP Anda"
                         pattern="[0-9]{10,15}"
                         required
                     />
                 </div>
                 <div class="form-group">
-                    <label for="pesan">Pesan</label>
+                    <label for="pesan">Pesan<?= $pesan ?></label>
                     <input
                         class="input-form"
                         type="text"

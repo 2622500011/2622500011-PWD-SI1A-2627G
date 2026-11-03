@@ -20,6 +20,13 @@ function kirimBukuTamu() {
         return false;
     }
 
-    alert("Terima kasih telah mengisi buku tamu", "Pesan kamu sudah kekirim ke Dapur Manis 07");
-    return false;
-    }
+    form.reset();
+    tampilkanpesan();
+
+    document.getElementById("ucapanTerimaKaih").textContent = 
+    "terimakasih sudah memesan di warung kami, pesanan kamu akan segera kami proses.";
+
+}
+
+/* Menampilkan pesan yang sudah terkirim */
+tampilkanpesan();
