@@ -1,14 +1,3 @@
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nama = $_POST['nama'];
-    $email = $_POST['email'];
-    $nohp = $_POST['no_hp'];
-    $pesan = $_POST['pesan'];
-
-    echo "Terimakasih $nama, pesan kamu sudah terkirim!";
-}
-?>
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -19,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <header>
-        <h1>Warung Mercon Sartika</h1>
+        <h1>🔥Warung Mercon Sartika🔥</h1>
     </header>
     
     <div class="container">
@@ -86,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <form action="" 
              method="POST">
                 <div class="form-group">
-                    <label for="nama">Nama Lengkap<?= $nama ?></label>
+                    <label for="nama">Nama Lengkap</label>
                     <input
                         class="input-form"
                         type="text"
@@ -99,7 +88,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     />
                 </div>
                 <div class="form-group">
-                    <label for="email">Email<?= $email ?></label>
+                    <label for="email">Email</label>
                     <input
                         class="input-form"
                         type="email"
@@ -110,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     />
                 </div>
                 <div class="form-group">
-                    <label for="no_hp">No. HP<?= $no_hp ?></label>
+                    <label for="no_hp">No. HP</label>
                     <input
                         class="input-form"
                         type="tel"
@@ -122,7 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     />
                 </div>
                 <div class="form-group">
-                    <label for="pesan">Pesan<?= $pesan ?></label>
+                    <label for="pesan">Pesan</label>
                     <input
                         class="input-form"
                         type="text"
@@ -132,9 +121,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         required
                     />
                 </div>
-                <button type="submit">Kirim</button>
+                <button type="submit">Kirim Pesan</button>
             </form>
         </section>
+
     </main>
 <footer>
     <p>&copy;2622500011_Sartika_SI1A_ UTS Pemrograman Web Dasar.</p>

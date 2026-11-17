@@ -1,20 +1,20 @@
 img {
     width: 100px;
     height: 100px;
-    object-fit: cover;/* biar poto nggak ketarik*/
-    object-position: center;/* biar poto di tengah*/
+    object-fit: cover;
+    object-position: center;
     border-radius: 12px;
     margin: 5px;
 }
-/* Bikin tiap bagian jadi 1 layar full */
+
 #home, #menu, #profil, #contact {
-  min-height: 100vh; /* 100% tinggi layar */
+  min-height: 100vh;
   padding-top: 40px;
   border-bottom: 2px dashed #e47423;
 }
 
 html {
-  scroll-behavior: smooth; /* biar pas di-klik gesernya halus */
+  scroll-behavior: smooth; 
 }
 
 body {
@@ -48,10 +48,10 @@ header {
   transform: translateY(-5px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-/* INI YANG BENER BIAR GAK MERAH SEMUA */
+
 .container {
   display: flex;
-  flex-wrap: wrap;/*biar footer bisa turun*/
+  flex-wrap: wrap;
 }
 
 .sidebar {
@@ -75,11 +75,11 @@ header {
 .content {
   margin-left: 240px;
   padding: 30px;
-  background: #FFF5EB; /* bukan putih polos, tapi krem oranye soft */
+  background: #FFF5EB; 
   min-height: 100vh;
 }
 
-/* Biar tiap halaman kayak kartu, bukan kertas polos */
+
 #home, #menu, #profil, #contact {
   background: white;
   padding: 25px;
@@ -92,7 +92,6 @@ h2 {
   color: #FF6B00;
 }
 
-/* Menu Andalan biar gak numpuk ke bawah */
 #menu img {
   border-radius: 12px;
   margin: 5px;
@@ -115,7 +114,7 @@ h2 {
   box-shadow: 0 10px 25px rgba(255, 107, 0, 0.3);
   border-color: #FF6B00;
 }
-/* BENERIN BUKU TAMU */
+
 #contact {
   padding: 20px;
 }

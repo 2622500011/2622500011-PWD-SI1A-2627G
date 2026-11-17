@@ -26,7 +26,4 @@ function kirimBukuTamu() {
     document.getElementById("ucapanTerimaKaih").textContent = 
     "terimakasih sudah memesan di warung kami, pesanan kamu akan segera kami proses.";
 
-}
-
-/* Menampilkan pesan yang sudah terkirim */
-tampilkanpesan();
+};
