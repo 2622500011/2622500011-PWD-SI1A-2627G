@@ -293,6 +293,52 @@ $teksStatus = $statusAktif ? "Aktif" : "Tidak aktif";
           <button type="submit">Kirim</button>
           <button type="reset">Batal</button>
         </form>
+        <?php if (isset($_SESSION["form_data"])): ?> 
+        <?php 
+        // Larik asosiatif untuk menghubungkan nama field dengan label. 
+        /* 
+        kunci larik tidak harus berupa angka.  
+        Kunci dapat berupa teks yang memiliki makna tertentu. 
+        */ 
+        $labelMap = [ 
+          "nama"        => "Nama Lengkap", 
+          "email"       => "Email", 
+          "semester"    => "Semester", 
+          "tanggal"     => "Tanggal Kunjungan", 
+          "jenis_pesan" => "Jenis Pesan", 
+          "prodi"       => "Program Studi", 
+        ]; 
+        ?> 
+        <article id="hasilKontak" class="submission-result" aria-live="polite"> 
+          <h3>Data Formulir yang Dikirim</h3> 
+ 
+          <?php foreach ($labelMap as $key => $label): ?> 
+            <p><strong><?= bersihkan($label); ?>:</strong> <?= bersihkan($_SESSION["form_data"][$key]); 
+?></p> 
+          <?php endforeach; ?> 
+ 
+          <?php 
+          /* 
+            $key untuk mendapatkan kunci larik. 
+            $label untuk mendapatkan nilai larik. 
+            $key untuk mengakses data formulir pada $_SESSION["form_data"]. 
+          */ 
+          ?> 
+ 
+          <p><strong>Topik yang Diminati:</strong></p> 
+          <?php if (count($_SESSION["form_data"]["minat"]) > 0): ?> 
+            <ul> 
+              <?php foreach ($_SESSION["form_data"]["minat"] as $topik): ?> 
+                <li><?= bersihkan($topik); ?></li> 
+              <?php endforeach; ?> 
+            </ul> 
+          <?php else: ?> 
+            <p>Belum ada topik yang dipilih.</p> 
+          <?php endif; ?> 
+ 
+          <p><strong>Pesan:</strong> <?= nl2br(bersihkan($_SESSION["form_data"]["pesan"])); ?></p> 
+        </article> 
+      <?php endif; ?>
       </section>
     </main>
 
