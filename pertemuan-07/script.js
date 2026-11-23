@@ -21,9 +21,6 @@ const tanggalInput = document.getElementById("tanggal");
 const prodiInput = document.getElementById("prodi");
 const pesanInput = document.getElementById("pesan");
 
-contactForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-
   formFeedback.className = "form-feedback-error";
 
 contactForm.addEventListener("submit", (event) => {
@@ -95,4 +92,5 @@ contactForm.addEventListener("reset", () => {
 
 contactForm.addEventListener("input", () => {
   formFeedback.textContent = "";
+});
 });
