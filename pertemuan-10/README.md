@@ -3,3 +3,4 @@
 2.memeriksa kesiapan phpMyAdmin dan repository pertemuan-10
 3.mengidentifikasi kebutuhan data formulir kontak p10
 4.menentukan data formulir yang akan di simpan ke basis data
+5.menentukan representasi data pilihan minat
