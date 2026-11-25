@@ -16,3 +16,4 @@
 - menambahkan pemeriksaan kegagalan kueri SELECT
 - mengambil hasil SELECT menggunakan mysqli_fetch_assoc
 - menguji hasil pengambilan data
+- memeriksa hasil pengambilan data kontak
