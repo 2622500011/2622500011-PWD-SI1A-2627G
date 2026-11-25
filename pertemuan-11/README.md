@@ -8,3 +8,4 @@
 - mengimpletasikan koneksi PHP-MySQL menggunakan MySQLi
 - menguji koneksi dari PHP ke MySQL dengan file sementara bernama uji_koneksi.php
 - menguji penanganan kegagalan koneksi PHP-MySQL
+- menyiapkan pemuatan berkas koneksi pada P11
