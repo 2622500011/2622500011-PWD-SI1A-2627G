@@ -9,3 +9,4 @@
 8.menentukan primary key dan auto increment tabel kontak
 9.memasukkan data awal ke tabel kontak
 10.mempelajari perintah SQL insert
+11.memeriksa data awal pada tabel kontak
