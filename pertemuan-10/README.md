@@ -7,3 +7,4 @@
 6.memnentukan nama basis data dan tabel p10
 7.merancang atribut dan tipe data tabel kontak
 8.menentukan primary key dan auto increment tabel kontak
+9.memasukkan data awal ke tabel kontak
