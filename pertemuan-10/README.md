@@ -1,2 +1,3 @@
 # pertemuan-10
-1.mempersiapkan phpMyAdmin
+1.menyiapkan dirokteri dan lingkungan pengembangan pertemua-10
+2.memeriksa kesiapan phpMyAdmin dan repository pertemuan-10
