@@ -21,6 +21,11 @@ while ($baris = mysqli_fetch_assoc($hasil)) {
     $dataKontak[] = $baris;
 }
 
+// P11: pengujian sementara hasil pengambilan data.
+echo "<pre>";
+var_dump($dataKontak);
+echo "</pre>";
+
 // P7: penggunaan POST 
 if (isset($_POST['nama'])) {
     $nama = $_POST['nama'] ?? '';
