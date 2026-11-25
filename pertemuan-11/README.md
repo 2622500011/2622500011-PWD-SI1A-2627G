@@ -11,3 +11,4 @@
 - menyiapkan pemuatan berkas koneksi pada P11
 - memeriksa alur ketersediaan koneksi pada index P11
 - menguji integrasi koneksi PHP-MySQL pada index P11
+- menentukan kueri SELECT data kontak
