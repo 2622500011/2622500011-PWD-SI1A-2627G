@@ -22,9 +22,9 @@ while ($baris = mysqli_fetch_assoc($hasil)) {
 }
 
 // P11: pengujian sementara hasil pengambilan data.
-echo "<pre>";
+/*echo "<pre>";
 var_dump($dataKontak);
-echo "</pre>";
+echo "</pre>";*/
 
 // P7: penggunaan POST 
 if (isset($_POST['nama'])) {
