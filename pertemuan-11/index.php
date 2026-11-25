@@ -1,5 +1,10 @@
 <?php
-session_start();
+#dimatikan pada P11
+#session_start();
+
+require_once ("fungsi.php"); #Penggunaan require_once() memastikan berkas tersebut tersedia dan tidak di muat berulang kali.
+#P11
+require_once ("koneksi.php");
 
 // P7: penggunaan POST 
 if (isset($_POST['nama'])) {
