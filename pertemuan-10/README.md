@@ -5,3 +5,4 @@
 4.menentukan data formulir yang akan di simpan ke basis data
 5.menentukan representasi data pilihan minat
 6.memnentukan nama basis data dan tabel p10
+7.merancang atribut dan tipe data tabel kontak
