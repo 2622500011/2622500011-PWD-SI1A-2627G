@@ -8,3 +8,4 @@
 7.merancang atribut dan tipe data tabel kontak
 8.menentukan primary key dan auto increment tabel kontak
 9.memasukkan data awal ke tabel kontak
+10.mempelajari perintah SQL insert
