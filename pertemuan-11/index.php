@@ -14,6 +14,13 @@ $hasil = mysqli_query($koneksi, $sql);
 if (!$hasil) {
     die("Kueri SELECT gagal dijalankan.");
 }
+
+// P11: mengambil hasil kueri sebagai larik asosiatif.
+$dataKontak = [];
+while ($baris = mysqli_fetch_assoc($hasil)) {
+    $dataKontak[] = $baris;
+}
+
 // P7: penggunaan POST 
 if (isset($_POST['nama'])) {
     $nama = $_POST['nama'] ?? '';
