@@ -18,3 +18,4 @@
 - menguji hasil pengambilan data
 - memeriksa hasil pengambilan data kontak
 - menampilkan data kontak dari basis data
+- menambahkan ekspor basis data pratikum
